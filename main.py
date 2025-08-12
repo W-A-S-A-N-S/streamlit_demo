@@ -64,5 +64,17 @@ options = ["North", "East", "South", "West"]
 selection = st.pills("Directions", options, selection_mode="multi")
 st.markdown(f"Your selected options: {selection}.")
 
+# 사이드바에 통계 추가
+st.sidebar.divider()
+st.sidebar.subheader("📊 통계")
+
+col1, col2 = st.sidebar.columns(2)
+with col1:
+    st.metric("총 프롬프트", "127")
+with col2:
+    st.metric("총 사용자", "23")
+
+st.sidebar.metric("오늘 등록", "5", delta="2")
+
 #실행방법
 #streamlit run main.py
