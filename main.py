@@ -62,12 +62,14 @@ search_query = st.text_input(
 if search_query:
     st.info(f"'{search_query}' 검색 결과 (기능 구현 예정)")
     st.balloons()
+    st.snow()
 
 
 
 # 버튼 추가
 if st.button("클릭해보세요!"):
     st.balloons()
+    st.snow()
 
 st.write(f"현재 배경색: {color}")
 st.write(f"보색: {complementary_color}")
