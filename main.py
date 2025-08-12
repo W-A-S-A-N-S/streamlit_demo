@@ -1,8 +1,21 @@
 # hello_streamlit.py
 import streamlit as st
 
-# 색상 선택
+# 색상 선택기를 테두리가 있는 박스 안에 배치
+st.markdown("""
+<div style="
+    border: 3px solid #333; 
+    border-radius: 10px; 
+    padding: 20px; 
+    background-color: white; 
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+">
+""", unsafe_allow_html=True)
+
 color = st.color_picker("배경색을 선택하세요", "#00f900")
+
+st.markdown("</div>", unsafe_allow_html=True)
 
 # 선택한 색으로 배경색 동적 변경
 st.markdown(f"""
