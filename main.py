@@ -61,6 +61,7 @@ search_query = st.text_input(
 
 if search_query:
     st.info(f"'{search_query}' 검색 결과 (기능 구현 예정)")
+    st.balloons()
 
 
 
