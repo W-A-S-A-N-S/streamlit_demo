@@ -55,7 +55,6 @@ st.write("안녕하세요! Streamlit으로 만든 웹 애플리케이션입니�
 
 # 버튼 추가
 if st.button("클릭해보세요!"):
-    st.success("버튼이 클릭되었습니다! 🎊")
     st.balloons()
 
 st.write(f"현재 배경색: {color}")
